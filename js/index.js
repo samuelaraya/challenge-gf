@@ -168,12 +168,11 @@ function createRatesList(rates, id_car) {
 function filterBy() {
 
   // Using timeout because the custom select is lazy on giving the real select the value
-  
+
   setTimeout(function () {
     // First I filter the groups
     if (document.querySelector("#select-category").value != "All") {
       array_cars_use = array_cars_final.filter(car => car.VehGroup == document.querySelector("#select-category").value);
-      console.log("lala")
     } else {
       array_cars_use = array_cars_final
     }
