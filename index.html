@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="modal fade" id="modal-inclusions" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <div class="modal-body-custom" id="modal-inclusions-content">
+
+                    <!-- <div class="d-flex justify-content-between">
+                <span class="title-modal">Rate Information</span>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <span class="subtitles">AR - Most Inclusive</span>
+
+              <div class="inclusions-list">
+                <div class="inclusion-item d-flex align-items-center">
+                    <div class="container-icon d-flex justify-content-center align-items-center"><img src="assets/images/chevron-right.svg" alt=""></div>
+                    <span class="text">Unlimited mileage</span>
+                </div>
+              </div> -->
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <main class="w-100 col-12 container">
+        <section class="container-filter bg-white d-flex align-items-center">
+            <div class="col-4 d-flex align-items-center justify-content-around">
+                <span class="filter-by">Filter by</span>
+                <div class="cont-select">
+
+
+
+                    <div class="custom-select">
+                        <img class="chevron-down-select" src="assets/images/chevron-down.svg" alt="">
+                        <select id="select-category" onchange="filterBy()">
+                            
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-checkboxes col-8 d-flex align-items-center">
+                <div class="col-4 d-flex flex-column">
+                    <div class="d-flex align-items-center top-checkbox"><input type="checkbox" onchange="filterBy()" name=""
+                            id="manual-transmission"><label class="checkbox" for="manual-transmission">Manual
+                            transmission</label></div>
+
+                    <div class="d-flex align-items-center"><input type="checkbox" name=""
+                            id="automatic-transmission"><label class="checkbox" for="automatic-transmission">Automatic
+                            transmission</label></div>
+                </div>
+
+
+                <div class="col-4 d-flex flex-column">
+                    <div class="d-flex align-items-center top-checkbox"><input type="checkbox" onchange="filterBy()" name=""
+                            id="five-seats"><label class="checkbox" for="five-seats">5 seats</label></div>
+
+                    <div class="d-flex align-items-center"><input type="checkbox" onchange="filterBy()" name="" id="seven-seats"><label
+                            class="checkbox" for="seven-seats">7 seats or more</label></div>
+                </div>
+
+                <div class="col-3 d-flex flex-column">
+                    <div class="d-flex align-items-center top-checkbox"><input type="checkbox" onchange="filterBy()" name=""
+                            id="convertibles"><label class="checkbox" for="convertibles">Convertibles</label></div>
+
+                    <div class="d-flex align-items-center opacity-0"><input type="checkbox" onchange="filterBy()" name=""><label
+                            class="checkbox"></label></div>
+
+                </div>
+
+
+
+
+
+
+
+            </div>
+        </section>
+
+        <section class="container-cars px-3">
+            <!-- <div class="car-card bg-white">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="col-4 p-2">
+                        <img src="https://www.avis.com/content/dam/cars/l/2020/kia/2020-kia-rio-s-sedan-grey_featured.png"
+                            alt="" class="img-fluid w-100">
+                    </div>
+                    <div class="col-7">
+                        <h2 class="car-category ">
+                            Economy
+                        </h2>
+                        <div class="container-btn d-flex justify-content-between align-items-center">
+                            <p class="car-description mb-0">
+                                GROUP A (ECAR)<br>KIA RIO OR SIMILAR
+                            </p>
+                            <button class="btn btn-book d-flex justify-content-around align-items-center"><span><img
+                                        src="assets/images/check.svg" alt=""></span> Book now!</button>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="d-flex justify-content-between">
+                    <div class="col-4 container-characteristics">
+                        <h6 class="subtitles">
+                            CHARACTERISTICS
+                        </h6>
+                        <div class="list-characteristics">
+                            <div class="d-flex">
+                                <div class="container-icon d-flex justify-content-center align-items-center">
+                                    <img src="assets/images/seats.svg" alt="Seat Icon">
+                                </div>
+                                <span>5 Seats</span>
+                            </div>
+
+                            <div class="d-flex">
+                                <div class="container-icon d-flex justify-content-center align-items-center">
+                                    <img src="assets/images/luggage.svg" alt="Seat Icon">
+                                </div>
+                                <span>5 Seats</span>
+                            </div>
+
+                            <div class="d-flex">
+                                <div class="container-icon d-flex justify-content-center align-items-center">
+                                    <img src="assets/images/bag.svg" alt="Seat Icon">
+                                </div>
+                                <span>5 Seats</span>
+                            </div>
+
+                            <div class="d-flex">
+                                <div class="container-icon d-flex justify-content-center align-items-center">
+                                    <img src="assets/images/door.svg" alt="Seat Icon">
+                                </div>
+                                <span>5 Seats</span>
+                            </div>
+
+                            <div class="d-flex">
+                                <div class="container-icon d-flex justify-content-center align-items-center">
+                                    <img src="assets/images/transmision.svg" alt="Seat Icon">
+                                </div>
+                                <span>5 Seats</span>
+                            </div>
+
+                            <div class="d-flex">
+                                <div class="container-icon d-flex justify-content-center align-items-center">
+                                    <img src="assets/images/air-conditioning.svg" alt="Seat Icon">
+                                </div>
+                                <span>5 Seats</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-7">
+                        <h6 class="subtitles">
+                            AVAILABLE RATES
+                        </h6>
+
+                        <div class="container-rates w-100">
+                            <form action="">
+                                <div class="rate-item d-flex w-100 justify-content-between align-items-center">
+                                    <div class="d-flex align-items-center">
+                                        <div class="cont-radio">
+                                            <input type="radio" name="rates" id="cambiar">
+                                        </div>
+                                        <span class="rate-name">
+                                            <label for="cambiar">AR - Most Inclusive</label>
+                                        </span>
+                                    </div>
+
+                                    <span class="rate-inclusions">
+                                       <a href="#" class="rate-inclusions text-decoration-none">Rate Inclusions</a>
+                                    </span>
+                                    <div class="price">
+                                        <span class="currency">USD</span><span class="number">752,99</span>
+                                    </div>
+                                </div>
+
+                            </form>
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </div> -->
+
+        </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+
+    <script src="js/index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,483 @@
+body {
+    background-color: #ECF0F1;
+    font-family: 'Rubik';
+}
+
+.modal-content {
+    border-radius: 10px !important;
+}
+
+.modal-body-custom {
+    padding: 30px;
+}
+
+.modal-body-custom .title-modal {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+
+    color: #D40029;
+
+    margin-bottom: 25px;
+}
+
+.inclusions-list {
+    margin-top: 25px;
+}
+
+.modal-body-custom .inclusion-item {
+    height: 30px;
+}
+
+.modal-body-custom .inclusion-item .container-icon {
+    height: 30px;
+    width: 8px;
+    margin-right: 10px;
+}
+
+.modal-body-custom .inclusion-item .text {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+
+    color: #333333;
+
+}
+
+.container-filter {
+    margin-top: 25px;
+    border-radius: 10px;
+    height: 100px;
+    margin-bottom: 25px;
+
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.08);
+}
+
+.filter-by {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+
+    letter-spacing: 0.03em;
+
+    color: #D4002A;
+}
+
+
+.select-category {
+    /* -webkit-appearance: none;
+    appearance: none; */
+
+    width: 150px;
+    height: 54px;
+
+    padding: 10px 25px;
+
+
+    background: #F5F5F5;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+
+    border-right: 25px solid #F5F5F5;
+}
+
+
+
+
+
+.car-card {
+    border-radius: 10px;
+    margin-bottom: 25px;
+
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.08);
+}
+
+.btn-book {
+    width: 155px;
+    height: 50px;
+    border-radius: 12px;
+    background-color: #D40029;
+
+    color: white;
+
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px !important;
+    transition: .15s ease-in-out;
+
+}
+
+
+.btn-book:hover {
+    background-color: #222222;
+
+    color: white;
+
+}
+
+.container-btn {
+    padding-right: 68px;
+}
+
+.car-category {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 26px;
+
+    color: #D40029;
+}
+
+p.car-description {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.18em;
+
+    color: #2F2F2F;
+
+    text-transform: uppercase;
+}
+
+.container-characteristics {
+    padding-left: 50px;
+    margin-top: 20px;
+}
+
+.subtitles {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    letter-spacing: 0.16em;
+
+    color: #A3A3A3;
+
+}
+
+.list-characteristics span {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    color: #333333;
+
+    height: 36px;
+    line-height: 36px;
+}
+
+.container-characteristics .subtitles {
+    margin-left: 8px;
+}
+
+.container-icon {
+    width: 28px;
+    height: 36px;
+
+}
+
+.container-icon img {
+    max-width: 15px;
+    max-height: 15px;
+}
+
+.container-rates {
+    padding-right: 50px;
+}
+
+.rate-item {
+    min-height: 60px;
+    border-bottom: 1px solid #E7E7E7;
+}
+
+.rate-item:last-child {
+    border-bottom: none;
+}
+
+/* .rate-item span {
+    line-height: 60px;
+} */
+
+span.rate-name {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    letter-spacing: 0.035em;
+
+    color: #333333;
+}
+
+
+span.rate-inclusions {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.035em;
+
+    color: #D40029 !important;
+
+    cursor: pointer;
+
+}
+
+a.rate-inclusions {
+    color: #D40029 !important;
+}
+
+.price .currency {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+
+    letter-spacing: 0.1em;
+    vertical-align: middle;
+
+    color: #D40029;
+    margin-right: 10px;
+}
+
+.price .number {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+
+    letter-spacing: 0.06em;
+    vertical-align: middle;
+
+    color: #D40029;
+}
+
+
+input[type="radio"] {
+    appearance: none;
+    background-color: #fff;
+    margin: 0;
+    font: inherit;
+    color: #A3A3A3;
+    width: 1.15em;
+    height: 1.15em;
+    border: 0.05em solid #A3A3A3;
+    border-radius: 50%;
+    transform: translateY(-0.075em);
+
+    display: grid;
+    place-content: center;
+}
+
+.form-control+.form-control {
+    margin-top: 1em;
+}
+
+input[type="radio"]::before {
+    content: "";
+    width: 0.65em;
+    height: 0.65em;
+    border-radius: 50%;
+    transform: scale(0);
+    transition: 120ms transform ease-in-out;
+    box-shadow: inset 1em 1em #D40029;
+}
+
+input[type="radio"]:checked::before {
+    transform: scale(1);
+}
+
+.cont-radio {
+    margin-right: 10px;
+}
+
+
+input[type="checkbox"] {
+    appearance: none;
+    background-color: #fff;
+    margin: 0;
+    font: inherit;
+    color: #A3A3A3;
+    width: 1.15em;
+    height: 1.15em;
+    border: 0.1em solid #A3A3A3;
+    border-radius: 0.3em;
+    transform: translateY(-0.075em);
+    transition: 120ms ease-in-out;
+
+
+    display: grid;
+    place-content: center;
+
+    margin-right: 15px;
+}
+
+input[type="checkbox"]::before {
+    content: "";
+    width: 0.65em;
+    height: 0.65em;
+    transform: scale(0);
+    transition: 120ms transform ease-in-out;
+    box-shadow: inset 1em 1em #fff;
+
+
+    transform-origin: bottom left;
+    /* clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%); */
+    clip-path: polygon(20.27% 45.82%, 4.67% 67.74%, 50% 100%, 100% 29.75%, 77.4% 13.67%, 43% 62%);
+}
+
+input[type="checkbox"]:checked::before {
+    background-color: green;
+    transform: scale(1);
+}
+
+input[type="checkbox"]:checked {
+    background-color: #D40029;
+    border: none;
+}
+
+.form-control+.form-control {
+    margin-top: 1em;
+}
+
+label.checkbox {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    letter-spacing: 0.04em;
+
+    color: #333333;
+
+}
+
+.top-checkbox {
+    margin-bottom: 15px;
+}
+
+
+
+/*the container must be positioned relative:*/
+.custom-select {
+    position: relative;
+    font-family: 'Rubik';
+    display: inline-block;
+  }
+  
+  .custom-select select {
+    display: none; /*hide original SELECT element:*/
+  }
+  
+  .select-selected {
+    background-color: #F5F5F5;
+    border-radius: 10px 10px 0px 0px;
+
+    width: 160px;
+    height: 54px;
+
+
+
+    background: #F5F5F5;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    
+  }
+  
+  .select-selected-bottom-rounded {
+    border-radius: 10px 10px 10px 10px;
+  }
+  
+  .select-selected-bottom-square {
+    border-radius: 8px;
+  }
+  
+  
+
+  /*set the styling and height for the list when the select box is open (active), the overflow-y property controls the scrolling:*/
+  .select-items{
+    border-radius: 8px;
+    height: 250px;
+    overflow-y: auto;
+    position: absolute;
+    background-color: white;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+
+    transition: .2s ease-in-out;
+
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.12);
+
+  }
+
+  img.chevron-down-select {
+    position: absolute;
+    top: 24px;
+    right: 25px;
+  }
+
+
+  /*style the items (options), including the selected item:*/
+  .select-items div,.select-selected {
+    color: #808080;
+    /* padding: 8px 16px; */
+    height: 54px;
+    line-height: 54px;
+    padding-left: 20px;
+    cursor: pointer;
+    user-select: none;
+    transition: .2s ease-in-out;
+
+  }
+  
+  /*hide the items when the select box is closed:*/
+  .select-hide {
+    display: none;
+  }
+  
+  .select-items div:hover, .same-as-selected {
+    background-color: rgba(0, 0, 0, 0.1);
+    transition: .2s ease-in-out;
+
+  }
+  
+  /* scrollbar width */
+  .select-items::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  /* scrollbar track */
+  .select-items::-webkit-scrollbar-track {
+    background: white;
+    border-radius: 0px 0px 10px 0px;
+  }
+   
+  /* scrollbar handle */
+  .select-items::-webkit-scrollbar-thumb {
+    background: #979797;
+    border-radius: 10px; /* optional rounded handle */
+    transition: .5s;
+    
+  }
+  
+  /* scrollbar handle on hover */
+  .select-items::-webkit-scrollbar-thumb:hover {
+    background: #808080;
+    
+  }
+
+
+
+
+
+
+
+  
